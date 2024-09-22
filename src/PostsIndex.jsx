@@ -5,7 +5,8 @@ export function PostsIndex({posts}) { // passing {posts} as an argument here is 
       {posts.map((post) => {
         <div key={post.id}>
           <h2>{post.name}</h2>
-          <img src={post.url} />
+          <p>{post.body}</p>
+          <img src={post.image} />
         </div>
       })}
     </div>
