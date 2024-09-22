@@ -2,8 +2,18 @@ import { PostsIndex } from "./PostsIndex";
 
 export function PostsPage() {
   const posts = [
-    {id: 1, name: "First", body: "", image: "https://via.placeholder.com/150"},
-    {id: 2, name: "Second", body: "", image: "https://via.placeholder.com/300"},
+    {
+      id: 1,
+      name: "First",
+      body: "I'm baby dreamcatcher small batch blog, marfa skateboard heirloom tumblr actually fam. Meh +1 bruh, seitan sustainable mukbang artisan neutra brunch actually godard you probably haven't heard of them leggings. Enamel pin DSA irony, polaroid ugh lyft four dollar toast. Fashion axe chillwave cray iceland, la croix XOXO hell of truffaut gastropub meggings.",
+      image: "https://th.bing.com/th/id/OIP.GPFEY6kfgxbsja6gmrW6rwAAAA?rs=1&pid=ImgDetMain"
+    },
+    {
+      id: 2,
+      name: "Second",
+      body: "I'm baby dreamcatcher small batch blog, marfa skateboard heirloom tumblr actually fam. Meh +1 bruh, seitan sustainable mukbang artisan neutra brunch actually godard you probably haven't heard of them leggings. Enamel pin DSA irony, polaroid ugh lyft four dollar toast. Fashion axe chillwave cray iceland, la croix XOXO hell of truffaut gastropub meggings.",
+      image: "https://th.bing.com/th/id/OIP.MCLzVoExgXPyNi_V5gb1AwHaE7?rs=1&pid=ImgDetMain"
+    }
   ];
 
 
