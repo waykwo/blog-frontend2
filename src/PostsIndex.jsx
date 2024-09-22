@@ -1,13 +1,13 @@
-export function PostsIndex({posts}) { // passing {posts} as an argument here is the equivalent of passing {props.posts}
-  // console.log(posts)
+export function PostsIndex({articles}) { // passing {articles} as an argument here is the equivalent of passing {props.articles}
+  console.log(articles)
   return (
     <div>
       <h1>All posts</h1>
-      {posts.map((post) => ( // if you had passed "props" into function, you would put props.posts here instead of posts
-        <div key={post.id}>
-          <h2>{post.name}</h2>
-          <p>{post.body}</p>
-          <img src={post.image} />
+      {articles.map((article) => ( // if you had passed "props" into function, you would put props.articles here instead of articles
+        <div key={article.id}>
+          <h2>{article.name}</h2>
+          <p>{article.body}</p>
+          <img src={article.image} />
         </div>
       ))}
     </div>
