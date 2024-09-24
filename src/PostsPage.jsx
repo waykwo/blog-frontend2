@@ -1,6 +1,7 @@
 import { PostsIndex } from "./PostsIndex";
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { PostsNew } from "./PostsNew";
 
 export function PostsPage() {
   // const posts = [
@@ -23,10 +24,14 @@ export function PostsPage() {
   const handleIndex = () => {
     console.log("handleIndex");
     axios.get("http://localhost:3000/posts.json").then((response) => {
-      console.log(response.data)
-      setPosts(response.data);
-    })
-  }
+      console.log(response.data);
+      setPosts(response.data); // setPosts is replacing the array of posts with the response.data
+    });
+  };
+
+  const handleCreate = (params) => {
+    console.log("handleCreate", params);
+  };
 
   useEffect(handleIndex, []);
 
@@ -34,6 +39,7 @@ export function PostsPage() {
   return (
     <main>
       <h1>Welcome to React!</h1>
+      <PostsNew onCreate={handleCreate} />
       <PostsIndex articles={posts} />
        {/* articles={posts} passes placeholder data to the index component as props */}
        {/* Usually, people name the variables the same (e.g., posts={posts}) but I named
