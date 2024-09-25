@@ -44,8 +44,9 @@ export function PostsPage() {
        {/* articles={posts} passes placeholder data to the index component as props */}
        {/* Usually, people name the variables the same (e.g., posts={posts}) but I named
         it differently on purpuse here to see what has to match with what. "posts" here 
-        has to match with line 4; "articles" has to match with the variable passed to 
-        PostsIndex */}
+        has to match with:
+          const [posts, setPosts] = useState([]);
+        "articles" has to match with the variable passed to PostsIndex */}
     </main>
   )
 }
